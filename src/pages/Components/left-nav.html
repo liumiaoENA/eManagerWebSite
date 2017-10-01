@@ -1,0 +1,5 @@
+<div class="nav">
+  <div *ngFor="let item of menuitem" class="nav_item" [ngClass]="{'active':active===item.url}">
+    <label (click)="navToPage(item.url)">{{item.name}}</label>
+  </div>
+</div>

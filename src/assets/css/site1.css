@@ -1,0 +1,23 @@
+html {
+  height: 100%; }
+
+body {
+  line-height: 22px;
+  font-family: "Microsoft YaHei";
+  font-size: 14px;
+  overflow-y: hidden;
+  user-select: none;
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Microsoft YaHei"; }
+
+a:link {
+  text-decoration: 0px; }
+
+input::-ms-input-placeholder,
+input::-webkit-input-placeholder {
+  color: #858585; }
+
+/*# sourceMappingURL=site1.css.map */

@@ -1,0 +1,35 @@
+
+<div class="login-container">
+    <div class="project">成都铁路局客站建设指挥部BIM云</div>
+    <div class="login-wrapper">
+      <div class="login-panel">
+        <p-growl [value]="msgs"></p-growl>
+        <div class="divform-bg1">
+            <form (ngSubmit)="login()" #loginForm="ngForm" class="form-bg">
+                    <div style="margin-bottom:33px;margin-top:20px;">
+                        <span style="margin-right:10px;"><img alt="用户" src="../../assets/images/icon_user.png"  width="40" style="display:inline-block;" /></span>
+                        <input type="search" [(ngModel)]="userName" name="userName" class="form-control" placeholder="请输入用户名" style="font-size: 18px;">
+                    </div>
+
+                    <div style="margin-bottom:36px;">
+                        <span style="margin-right:10px;"><img alt="用户" src="../../assets/images/icon_password.png" width="40" style="display:inline-block;" /></span>
+                        <input type="password" class="form-control" placeholder="请输入密码" [(ngModel)]="passWord" name="passWord" style="font-size: 18px;">
+                    </div>
+                    <div class="form-group " style="margin-bottom: 33px;">
+                        <button id="submit" type="submit" class="btn btn-block">登　录</button>
+                    </div>
+                    <div style="color:white;font-size:18px;">
+                        <p-checkbox [(ngModel)]="autoLogin" binary="true" name="autoLogin" label="记住密码"></p-checkbox>
+                        <a href="#" class="forgetPassword" style="float:right;color:white;">忘记密码</a>
+                    </div>
+            </form>
+        </div>
+      </div>
+    </div>
+    <div class="copyright"></div>
+</div>
+
+<p-blockUI [blocked]="blocksubmit">
+      <img src="../../assets/images/loading.gif" style="position:absolute;top:45%;left:45%;z-index:9999;width:3%;" />
+</p-blockUI>
+

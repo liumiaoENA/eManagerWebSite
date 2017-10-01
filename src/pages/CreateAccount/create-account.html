@@ -1,0 +1,8 @@
+<header></header>
+<div class="leftPanel">
+  <left-nav [active]="active"></left-nav>
+</div>
+<div class="rightPanel">
+  <user-form [userinfo]="userinfo" (submitEvent)="submitHandler($event)"></user-form>
+  <p-messages [(value)]="msgs"></p-messages>
+</div>
